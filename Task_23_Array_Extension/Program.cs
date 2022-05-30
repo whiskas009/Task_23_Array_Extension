@@ -19,6 +19,7 @@ namespace Task_23_Array_Extension
             {
                 Console.WriteLine("Введите число или соответвующую команду: \n");
                 string userInput = Console.ReadLine();
+                
                 switch (userInput)
                 {
                     case "sum":
@@ -27,11 +28,10 @@ namespace Task_23_Array_Extension
                             sumArray += array[i];
                         }
                         Console.WriteLine("Сумма введёных чисел: " + sumArray);
-                        wordForExit = "exit";
                         break;
 
                     case "exit":
-                        wordForExit = "exit";
+                        wordForExit = userInput;
                         break;
 
                     default:

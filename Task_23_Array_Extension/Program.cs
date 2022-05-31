@@ -11,8 +11,6 @@ namespace Task_23_Array_Extension
         static void Main(string[] args)
         {
             string wordForExit = "";
-            int number;
-            int sumArray = 0;
             int[] array = new int[0];
 
             while (wordForExit != "exit")
@@ -23,6 +21,7 @@ namespace Task_23_Array_Extension
                 switch (userInput)
                 {
                     case "sum":
+                        int sumArray = 0;
                         for (int i = 0; i < array.Length; i++)
                         {
                             sumArray += array[i];
@@ -35,7 +34,7 @@ namespace Task_23_Array_Extension
                         break;
 
                     default:
-                        number = int.Parse(userInput);
+                        int number = int.Parse(userInput);
                         int[] tempArray = new int[array.Length+1];
 
                         for (int i = 0; i < array.Length; i++)
